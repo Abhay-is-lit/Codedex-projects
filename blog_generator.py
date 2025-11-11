@@ -3,7 +3,7 @@ from google import genai
 
 # Setting up API key.
 
-client = genai.Client(api_key="AIzaSyAqW-cCX8EHiesav9YeDbAJBTxuumwGBIk")
+client = genai.Client(api_key="")
 
 generation_config = genai.types.GenerationConfig(
     max_output_tokens=67
@@ -23,5 +23,6 @@ if work.lower() == 'y':
     print(response.text)
 else:
     print("Okay, see you later!")
+
 
 
